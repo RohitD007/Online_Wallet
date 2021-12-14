@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Request Money</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:yellow;
+		background-color:blue;}
+	.container{
+		width:500px;
+		height:700px;
+		background-color:rgba(0,0,0,0.3);
+		text-align:center;
+		position:relative;
+		
+		margin:0 auto;
+		margin-top:40px;
+		padding-top:9px;
+		padding-left:60px;
+		border-radius:18px;
+		color:white;
+		font-weight:bolder;
+		}
+	
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:yellow;
+		}
+	a:link{
+		color:yellow;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:yellow;
+		}
+	
+	p{
+		font-size:20px;
+		text-align:left;
+		font-family:courier;
+		}
+
+	Input[type="text"],[type="date"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		}
+		
+	
+</style>
+<body>
+
+<h1>WALLET Payment Network</h1>
+
+
+<div>
+  <img class="mySlides" src="courier5.jpg"/>
+  <img class="mySlides" src="courier6.png"/>
+  <img class="mySlides" src="courier7.png"/>
+  <img class="mySlides" src="courier8.png"/>
+
+</div>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="home.html">HOME</a></td>
+</tr>
+</table>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<h2>Request TRANSCATION</h2><br/>
+
+<div class="container"> <form action="request.jsp" method="post">
+<h2>Send Using Email/Phone </h2>
+<div class="form-input"><p>Your SSN: </p><input type="text" name="SSN" placeholder="SSN"/></div>
+<div class="form-input"><p>Email/Phone: </p><input type="text" name="email_id" placeholder="EMAIL"/></div>
+<div class="form-input"><p>Amount: </p><input type="text" name="amount" placeholder="AMOUNT" /></div>
+<div class="form-input"><p>MEMO: </p><input type="text" name="memo" placeholder="MEMO" /></div>
+<input type="submit" name="submit" value="REQUEST MONEY" class="btn"/>
+</div>
+
+
+</body>
+</html>

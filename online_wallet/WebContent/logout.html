@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CONFIRM LOGOUT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:yellow;
+		background-color:blue;}
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:yellow;
+		}
+	a:link{
+		color:yellow;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:yellow;
+		}
+	
+	
+		.btn1{
+		color:#fff;
+		border-radius:4px;
+		border:1px;
+		background-color:blue;
+		border_bottom:4px solid #27ae60;
+		}
+		
+		
+	
+</style>
+
+<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+
+
+</head>
+<body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
+
+<h1>WALLET Payment Network</h1>
+
+
+<div>
+  <img class="mySlides" src="courier5.jpg"/>
+  <img class="mySlides" src="courier6.png"/>
+  <img class="mySlides" src="courier7.png"/>
+  <img class="mySlides" src="courier8.png"/>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="Account_info.html">Account Info</a></td>
+<td><a href="Send.html">SEND MONEY</a></td>
+<td><a href="Request.html">REQUEST MONEY</a></td>
+<td><a href="Statement.html">STATEMENT</a></td>
+<td><a href="Search.html">Search Transactions</a></td>
+<td><a href="logout.html">Sign OUT</a></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td><a href="Login.html"><p class="btn1">CONFIRM LOGOUT</p></a>
+</td>
+</tr>
+</table>
+
+
+</form></div>
+</body>
+</html>

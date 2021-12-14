@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Online Wallet</title>
+<style>
+
+	body{margin:0 auto;
+		background-image:url(onlineWallet.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+		}
+
+	h1{	color:#ffcc00;
+	   	text-align:center;
+	   	position:relative;
+	   	top:10px;
+	   	font-family:courier;}
+	
+	.container{
+		width:500px;
+		height:600px;
+		text-align:left;
+		position:relative;
+		margin:0 auto;
+		margin-top:100px;
+		margin-right:10px;
+		color:yellow;
+		font-weight:bold;
+		font-size:20px;
+
+		}	
+	Input[type="text"],[type="password"],[type="email"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+				
+		}
+	h2{color:#cc3300;
+		position:relative;
+		margin:0 auto;
+		margin-top:50px;
+		margin-right:5px;
+		}
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:#660066;
+		}	
+
+	h3{
+		font-size:50px;
+		position:absolute;
+		margin:0 head;
+		margin-top:10px;}
+		
+	.btn1{
+		padding: 15px 30px;
+		color:#fff;
+		border-radius:4px;
+		border:none;
+		background-color:#ffff00;
+		border-bottom:4px solid #27ae60;
+		position:absolute;
+		top:20px;
+		text-align:right;
+		}
+
+	marquee{
+		color:red;
+		font-size:20px;
+		position:absolute;
+		top:70px;
+		font-weight:bold;
+		}
+		
+	a{
+		text-decoration:none;
+		}
+	
+	
+</style>
+</head>
+<body>
+
+<h1>ONLINE PAYMENT WALLET</h1>
+
+
+<marquee><em> IF YOU ARE REGISTERED CLICK ON LOGIN BUTTON </em></marquee>
+
+
+<div class="container"> <form action="register.jsp" method="post"">
+
+<h2> REGISTER</h2><br/>
+
+<div class="form-input"><p>USERNAME : </p><input type="text" name="username"/></div>
+
+
+<div class="form-input"><p>PASSWORD : </p><input type="password"size="8" name="password" /></div>
+
+<p>*Password  must contain 8 digit alphabet and numeric</p>
+
+<div class="form-input"><p>SSN : </p><input type="text" name="SSN" /></div>
+
+
+<div class="form-input"><p>PHONE    : </p><input type="text" name="phone" /></div>
+
+<input type="submit" name="submit" value="REGISTER" class="btn" />
+
+</form></div>
+
+<a href="Login.html"><p class="btn1">LOGIN</p></a>
+
+
+</body>
+</html>
